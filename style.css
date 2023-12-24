@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap");
+
+.matrix {
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #39ff14;
+  height: 210px;
+  width: 275px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(10, 10px);
+  gap: 15px;
+  overflow: hidden;
+}
+
+@keyframes up-move {
+  0% {
+    transform: translateY(-185px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes down-move {
+  0% {
+    transform: translateY(-175px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.one {
+  animation: up-move 5s steps(10) infinite;
+}
+
+.one-down {
+  animation: down-move 5s steps(10) infinite;
+}
+
+.two {
+  animation: up-move 7s steps(10) infinite;
+}
+
+.two-down {
+  animation: down-move 7s steps(10) infinite;
+}
+
+.three {
+  animation: up-move 3s steps(10) infinite;
+}
+
+.three-down {
+  animation: down-move 3s steps(10) infinite;
+}
+
+.four {
+  animation: up-move 5s steps(10) infinite;
+}
+
+.four-down {
+  animation: down-move 5s steps(10) infinite;
+}
+
+.five {
+  animation: up-move 6s steps(10) infinite;
+}
+
+.five-down {
+  animation: down-move 6s steps(10) infinite;
+}
+
+.six {
+  animation: up-move 5s steps(10) infinite;
+}
+
+.six-down {
+  animation: down-move 5s steps(10) infinite;
+}
+
+.seven {
+  animation: up-move 7s steps(10) infinite;
+}
+
+.seven-down {
+  animation: down-move 7s steps(10) infinite;
+}
+
+.eight {
+  animation: up-move 8s steps(10) infinite;
+}
+
+.eight-down {
+  animation: down-move 8s steps(10) infinite;
+}
+
+.nine {
+  animation: up-move 4s steps(10) infinite;
+}
+
+.nine-down {
+  animation: down-move 4s steps(10) infinite;
+}
+
+.ten {
+  animation: up-move 6s steps(10) infinite;
+}
+
+.ten-down {
+  animation: down-move 6s steps(10) infinite;
+}
+
+.me:hover {
+  src: url("resources/fire sunglasses.png");
+}
